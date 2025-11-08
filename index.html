@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Testable Profile Card</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <article data-testid="test-profile-card">
+        <figure>
+        <img
+            src="https://randomuser.me/api/portraits/men/75.jpg"
+            alt="User Avatar"
+            data-testid="test-user-avatar"
+            id="userAvatar"
+        />
+        <div class="upload-wrapper">
+                <label for="avatarUpload" class="upload-label">Upload</label>
+                <input type="file" id="avatarUpload" class="upload-input" accept="image/*">
+        </div>
+        </figure>
+        <div class="card-body">
+        <header>
+            <h2 data-testid="test-user-name">DENNIS UDI</h2>
+        </header>
+
+        <main>
+            <p data-testid="test-user-bio">
+            Hello! I'm Dennis Udi, a passionate frontend developer
+            who loves creating accessible 
+            and modern web interfaces.
+            </p>
+
+            <nav data-testid="test-user-social-links" aria-label="Social media links">
+            <ul>
+                    <li><a href="https://twitter.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">Twitter</a></li>
+                    <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-facebook">Facebook</a></li>
+                    <li><a href="https://github.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a></li>
+                    <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a></li>
+            </ul>
+            </nav>
+            <section data-testid="test-user-hobbies">
+            <h3>Hobbies</h3>
+            <ul>
+                    <li>Coding</li>
+                    <li>Music</li>
+                    <li>Songwriting</li>
+            </ul>
+            </section>
+
+            <section data-testid="test-user-dislikes">
+            <h3>Dislikes</h3>
+            <ul>
+                    <li>Spam Emails</li>
+                    <li>Lagos Traffic</li>
+                    <li>Hot Weather</li>
+            </ul>
+            </section>
+        </main>
+
+        <footer>
+                Current Time (ms): <span data-testid="test-user-time" id="userTime"></span>
+        </footer>
+        </div>
+  </article>
+  <script src="script.js"></script>
+</body>
+</html>

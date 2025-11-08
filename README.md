@@ -1,0 +1,1 @@
+A responsive and interactive profile card built with HTML, CSS, and JavaScript. It allows users to upload a circular profile image, displays personal info and social links, and adjusts seamlessly across devices — perfect for personal portfolios and developer dashboards.
